@@ -12,9 +12,9 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://192.168.18.202:3306/cloudDB03
+    url: jdbc:mysql://192.168.1.128:3306/cloudDB01
     username: root
-    password: root
+    password: 123456
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -29,14 +29,14 @@ mybatis:
 eureka: 
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://localhost:7001/eureka
   instance:
     instance-id: dept-8001.com
     prefer-ip-address: true
  
 info:
-  app.name: my-microservicecloud-springcloudconfig03-java1129
-  company.name: www.my.com
+  app.name: microservicecloud-springcloudconfig01
+  company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -49,9 +49,9 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://192.168.18.202:3306/cloudDB02
+    url: jdbc:mysql://192.168.1.128:3306/cloudDB02
     username: root
-    password: root
+    password: 123456
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -68,13 +68,13 @@ mybatis:
 eureka: 
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://localhost:7001/eureka
   instance:
     instance-id: dept-8001.com
     prefer-ip-address: true
  
 info:
-  app.name: my-microservicecloud-springcloudconfig02
-  company.name: www.my.com
+  app.name: microservicecloud-springcloudconfig02
+  company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
